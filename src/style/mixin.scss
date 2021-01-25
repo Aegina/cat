@@ -1,0 +1,13 @@
+@mixin clearfix {
+    &::after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+  
+  @mixin text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

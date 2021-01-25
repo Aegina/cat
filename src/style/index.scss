@@ -1,0 +1,141 @@
+
+@import './theme.scss';
+@import './mixin.scss';
+
+// elementui样式重置
+
+.el-input__inner {
+  color: #fff;
+  background: transparent;
+  border: none;
+    border-bottom: 1px solid rgba(255, 250, 250, 0.2);
+    border-radius: 0;
+  &:focus {
+    border-bottom-color: rgba(255, 250, 250, 0.6);
+  }
+}
+.el-input__prefix, .el-input__suffix {
+  color: #fff;
+}
+
+.el-input-group__append,.el-select-dropdown,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover  {
+  background:transparent;
+}
+.el-select-dropdown__item.selected {
+  color: #fff;
+}
+
+input::-webkit-input-placeholder { 
+  /* WebKit, Blink, Edge */    
+  color: rgba(255, 255, 255, .2); 
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */   color:rgba(255, 255, 255, .2); }
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */   color:rgba(255, 255, 255, .2); }
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */   color:rgba(255, 255, 255, .2); }
+#live2dcanvas {
+  position: absolute!important;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+      Microsoft YaHei, 微软雅黑, Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.3;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body {
+    height: 100%;
+    font-size: 14px;
+    color: $text_color;
+    overflow: hidden;
+    background-color: $bg;
+  }
+  
+  ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  
+  label {
+    font-weight: 700;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #app {
+    height: 100%;
+  }
+  
+  a,
+  a:focus,
+  a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  div:focus {
+    outline: none;
+  }
+  .clearfix {
+    @include clearfix;
+  }
+  
+  // main-container global css
+  .app-container {
+    padding: 20px;
+  }
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+  
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    border-radius: 999px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2) inset;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    box-shadow: 0 0 0 1000px #103656 inset;
+  }
+  

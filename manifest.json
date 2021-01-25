@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "排排坐",
+    "version": "0.1.0",
+    "description": "中国风背景色的展示",
+    "author": "zhangqin",
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+      }
+  }
